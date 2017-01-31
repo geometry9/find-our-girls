@@ -7,15 +7,42 @@
  * LICENSE.txt file in the root directory of this source tree.
  */
 
-@import '../variables.css';
+@import '../../components/variables.css';
 
 .root {
-  padding-left: 20px;
-  padding-right: 20px;
+  display: block;
 }
 
 .container {
   margin: 0 auto;
   padding: 0 0 40px;
-  max-width: var(--max-content-width);
+}
+
+:global(section) {
+  text-align: center;
+}
+
+:global(section.container-1 .react-simple-parallax-bg) {
+  background: url('https://unsplash.it/200/300') no-repeat center center fixed;
+  background-size: cover;
+  height: 750px;
+  width: 100%;
+}
+
+:global(section.container-2 .react-simple-parallax-bg) {
+  background: url('https://unsplash.it/200/300') no-repeat center center fixed;
+  background-size: cover;
+  height: 750px;
+  width: 100%;
+}
+
+:global(section.container-3 .react-simple-parallax-bg) {
+  background: url('https://unsplash.it/200/300') no-repeat center center fixed;
+  background-size: cover;
+  height: 750px;
+  width: 100%;
+}
+
+:global(section .parallax) {
+  margin: auto;
 }

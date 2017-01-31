@@ -9,6 +9,7 @@
 
 import React, { PropTypes } from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
+import Parallax from 'react-simple-parallax';
 import s from './Home.css';
 
 class Home extends React.Component {
@@ -24,15 +25,21 @@ class Home extends React.Component {
     return (
       <div className={s.root}>
         <div className={s.container}>
-          <div className={s['content-1']}>
-            <h1>About Us</h1>
-          </div>
-          <div className={s['content-2']}>
-            <h1>Press & Media</h1>
-          </div>
-          <div className={s['content-3']}>
-            <h1>How To</h1>
-          </div>
+          <section className="container-1">
+            <Parallax className="parallax">
+              <div>Hello World!</div>
+            </Parallax>
+          </section>
+          <section className="container-2">
+            <Parallax className="parallax">
+              <div>Not Hello World</div>
+            </Parallax>
+          </section>
+          <section className="container-3">
+            <Parallax className="parallax">
+              <div>Some Other Thing</div>
+            </Parallax>
+          </section>
         </div>
       </div>
     );
