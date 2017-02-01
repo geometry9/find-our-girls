@@ -5,6 +5,24 @@ html, body {
   height: 100%;
 }
 
+.js-Parallaxify {
+  position: relative;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+/* stretch body child for wow effect*/
+body > .js-Parallaxify { background-size: cover }
+/* for "hoverable" child, see rules below (that use absolute) */
+.js-Parallaxify > * { position: relative }
+.js-Parallaxify > .js-Parallaxify {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
 #root{
   top: 0;
   left: 0;
