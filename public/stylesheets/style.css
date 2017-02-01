@@ -1,0 +1,89 @@
+html, body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#root{
+  top: 0;
+  left: 0;
+}
+
+nav{
+  height: 30px;
+  background: #292423;
+}
+
+nav ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+  width: 100%;
+  height: 30px;
+}
+nav li{
+  float: left;
+  margin-left: 10px;
+  line-height: 30px;
+  color: white;
+}
+a, a:visited{
+  text-decoration: none;
+  color: #fff;
+}
+section{
+  height: 600px;
+  width: 100%;
+  position: relative;
+}
+.first-text-content{
+  width: 80%;
+  margin-left: 10%;
+  color: #fff;
+}
+.section-content{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 80%;
+  margin: 0 auto;
+}
+.container-1{
+  background: url('https://i.stack.imgur.com/sP7nK.png') no-repeat center center;
+  background-size: cover;
+}
+.container-2{
+  background: #292423;
+}
+.container-3{
+  background: #F68076;
+}
+.circles{
+  display: inline-block;
+  margin-left: 10px;
+  width: 20%;
+  padding: 10px;
+  height: 250px;
+  color: white;
+}
+
+.circle-part{
+  border-radius: 50px;
+  width: 100px;
+  height: 100px;
+  background: #F68076;
+  margin: 0 auto;
+}
+
+.cards{
+  padding: 10px;
+  color: white;
+  background: #292423;
+  display: inline-block;
+  margin-left: 10px;
+  height: 350px;
+  width: 200px;
+
+}
